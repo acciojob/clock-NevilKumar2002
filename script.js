@@ -1,5 +1,7 @@
 //your JS code here. If required.
-window.onload=function(){getTime();}  
+window.onload=function(){
+	getTime();
+}  
 function getTime(){  
 var today=new Date(); 
 var date=today.getDate();
@@ -16,10 +18,4 @@ var version="AM";
 document.getElementById('timer').innerHTML=(month+"/"+date+"/"+year+", "+hours+":"+minutes+":"+seconds+" "+version) ;
 setTimeout(function(){getTime()},1000);  
 }  
-//setInterval("getTime()",1000);//another way  
-function checkTime(i){  
-if (i<10){  
-  i="0" + i;  
- }  
-return i;  
-}  
+
